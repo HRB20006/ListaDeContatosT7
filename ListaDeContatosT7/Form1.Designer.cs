@@ -87,6 +87,9 @@
             // 
             // textBoxNome
             // 
+            this.textBoxNome.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNome.ForeColor = System.Drawing.SystemColors.Window;
             this.textBoxNome.Location = new System.Drawing.Point(510, 7);
             this.textBoxNome.Multiline = true;
             this.textBoxNome.Name = "textBoxNome";
@@ -95,7 +98,9 @@
             // 
             // textBoxTel
             // 
+            this.textBoxTel.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTel.ForeColor = System.Drawing.SystemColors.Window;
             this.textBoxTel.Location = new System.Drawing.Point(535, 84);
             this.textBoxTel.Multiline = true;
             this.textBoxTel.Name = "textBoxTel";
@@ -104,6 +109,9 @@
             // 
             // textBoxSobre
             // 
+            this.textBoxSobre.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxSobre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSobre.ForeColor = System.Drawing.SystemColors.Window;
             this.textBoxSobre.Location = new System.Drawing.Point(560, 44);
             this.textBoxSobre.Multiline = true;
             this.textBoxSobre.Name = "textBoxSobre";
@@ -132,9 +140,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAdicionar);
-            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lista de Comtatos";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
