@@ -36,6 +36,7 @@
             this.textBoxTel = new System.Windows.Forms.TextBox();
             this.textBoxSobre = new System.Windows.Forms.TextBox();
             this.listBoxContatos = new System.Windows.Forms.ListBox();
+            this.buttonOrg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAdicionar
@@ -43,7 +44,7 @@
             this.buttonAdicionar.BackColor = System.Drawing.Color.Lime;
             this.buttonAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdicionar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonAdicionar.Location = new System.Drawing.Point(580, 271);
+            this.buttonAdicionar.Location = new System.Drawing.Point(480, 271);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Size = new System.Drawing.Size(244, 92);
             this.buttonAdicionar.TabIndex = 1;
@@ -126,12 +127,26 @@
             this.listBoxContatos.Size = new System.Drawing.Size(420, 355);
             this.listBoxContatos.TabIndex = 8;
             // 
+            // buttonOrg
+            // 
+            this.buttonOrg.BackColor = System.Drawing.Color.Lime;
+            this.buttonOrg.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrg.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonOrg.Location = new System.Drawing.Point(762, 271);
+            this.buttonOrg.Name = "buttonOrg";
+            this.buttonOrg.Size = new System.Drawing.Size(175, 92);
+            this.buttonOrg.TabIndex = 9;
+            this.buttonOrg.Text = "Organizar";
+            this.buttonOrg.UseVisualStyleBackColor = false;
+            this.buttonOrg.Click += new System.EventHandler(this.buttonOrg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(966, 375);
+            this.Controls.Add(this.buttonOrg);
             this.Controls.Add(this.listBoxContatos);
             this.Controls.Add(this.textBoxSobre);
             this.Controls.Add(this.textBoxTel);
@@ -158,6 +173,7 @@
         private System.Windows.Forms.TextBox textBoxTel;
         private System.Windows.Forms.TextBox textBoxSobre;
         private System.Windows.Forms.ListBox listBoxContatos;
+        private System.Windows.Forms.Button buttonOrg;
     }
 }
 

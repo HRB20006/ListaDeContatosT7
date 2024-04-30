@@ -78,6 +78,7 @@ namespace ListaDeContatosT7
             //listBoxContatos.Items.Add(contato.ToString());
 
             Escrever(contato);
+            Organizar();
             Ler();
             Exibir();
             LimparFormulário();
@@ -86,6 +87,34 @@ namespace ListaDeContatosT7
         private void Form1_Load(object sender, EventArgs e)
         {
             Ler();
+            Exibir();
+        }
+
+        private void Organizar()
+        {
+            Contato temporario;
+            bool troca = true;
+
+            do
+            {
+                troca = false;
+
+                for (int h = 0; h < contatos.Length - 1;)
+                {
+                    if (contatos[h].Nome.CompareTo(contatos[h + 1].Nome) > 0)
+                    {
+                        temporario = contatos[h];
+                        contatos[h] = contatos[h + 1];
+                        contatos[h + 1] = temporario;
+                        troca = true;
+                    }
+                }
+            } while (troca == true);
+        }
+
+        private void buttonOrg_Click(object sender, EventArgs e)
+        {
+            Organizar();
             Exibir();
         }
     }
